@@ -12,6 +12,7 @@ class AppBAR extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      elevation: 0.0,
       backgroundColor: appBarColor,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -20,6 +21,12 @@ class AppBAR extends StatelessWidget implements PreferredSizeWidget {
             (Icons.sort_sharp),
             color: Colors.white,
             size: 25.0,
+          ),
+          const Text(
+            'ToDo',
+            style: TextStyle(
+              fontFamily: 'poppins_bold',
+            ),
           ),
           SizedBox(
             height: 40.0,
