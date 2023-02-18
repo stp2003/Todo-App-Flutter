@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
 
 class SearchBox extends StatelessWidget {
+  // final List<ToDODataBase> toDoList;
+
   const SearchBox({
     super.key,
+    // required this.toDoList,
   });
+
+  //?? search functionality ->
+  // void search(String enteredText) {
+  //   List<ToDODataBase>? result = [];
+  //   if (enteredText.isEmpty) {
+  //     result = toDoList;
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +26,7 @@ class SearchBox extends StatelessWidget {
       ),
       child: const TextField(
         style: TextStyle(
-            color: Colors.black,
-            letterSpacing: 0.8,
-            fontFamily: 'poppins'
-        ),
+            color: Colors.black, letterSpacing: 0.8, fontFamily: 'poppins'),
         decoration: InputDecoration(
           contentPadding: EdgeInsets.all(0.0),
           prefixIcon: Icon(
