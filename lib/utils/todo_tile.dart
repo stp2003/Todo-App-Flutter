@@ -36,7 +36,7 @@ class TodoTile extends StatelessWidget {
           width: double.infinity,
           padding: const EdgeInsets.all(12.0),
           decoration: BoxDecoration(
-            color: const Color(0xFF0C99DF),
+            color: const Color(0xFF326DE3),
             borderRadius: BorderRadius.circular(15.0),
           ),
           child: SingleChildScrollView(
@@ -47,7 +47,14 @@ class TodoTile extends StatelessWidget {
                 Checkbox(
                   value: taskCompleted,
                   onChanged: onChanged,
-                  activeColor: Colors.cyan,
+                  activeColor: Colors.black87,
+                  checkColor: Colors.lightGreen,
+                  side: MaterialStateBorderSide.resolveWith(
+                    (states) => const BorderSide(
+                      width: 1.1,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
 
                 //** task name ->
